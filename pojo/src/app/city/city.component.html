@@ -1,36 +1,34 @@
-<div class="container ">
-    <div class="jumbotron text-center">
-        <h1>Add Details</h1>
-    </div>
+<div class="container-md ">
+    
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
 
             <form [formGroup]="City"><br>
                 <div><label for="cityId"><b>CityId:</b></label><br>
-                    <input type="text" formControlName="cityId" placeholder="Enter Id"></div>
+                    <input type="text" id="inputwidth" formControlName="cityId" placeholder="Enter Id"></div>
                 <div><label for="cityName"><b>CityName:</b></label><br>
-                    <input type="text" formControlName="cityName" placeholder="Enter Name"></div>
-                <div><label for="cityCode"><b>cityCode:</b></label><br>
-                    <input type="text" formControlName="cityCode" placeholder="Enter code"></div>
-
+                    <input type="text" id="inputwidth" formControlName="cityName" placeholder="Enter Name"></div>
+                <div><label for="cityCode"><b>CityCode:</b></label><br>
+                    <input type="text"id="inputwidth" formControlName="cityCode" placeholder="Enter code"></div>
+                <hr>
                 <div formGroupName="state">
-                    <div><label for="stateId"><b>stateId:</b></label><br>
-                        <input type="text" formControlName="stateId" placeholder="Enter Id"></div>
-                    <div><label for="stateName"><b>stateName:</b></label><br>
-                        <input type="text" formControlName="stateName" placeholder="Enter Name"></div>
-                    <div><label for="stateCode"><b>stateCode:</b></label><br>
-                        <input type="text" formControlName="stateCode" placeholder="Enter code"></div>
-
+                    <div><label for="stateId"><b>StateId:</b></label><br>
+                        <input type="text"id="inputwidth" formControlName="stateId" placeholder="Enter Id"></div>
+                    <div><label for="stateName"><b>StateName:</b></label><br>
+                        <input type="text"id="inputwidth" formControlName="stateName" placeholder="Enter Name"></div>
+                    <div><label for="stateCode"><b>StateCode:</b></label><br>
+                        <input type="text"id="inputwidth" formControlName="stateCode" placeholder="Enter code"></div>
+                 <hr>
                     <div formGroupName="country">
                         <div><label for="countryId"><b>CountryId:</b></label><br>
-                            <input type="text" formControlName="countryId" placeholder="Enter Id"></div>
+                            <input type="text" id="inputwidth"formControlName="countryId" placeholder="Enter Id"></div>
                         <div><label for="countryName"><b>CountryName:</b></label><br>
-                            <input type="text" formControlName="countryName" placeholder="Enter Name"></div>
-                        <div><label for="countryCode"><b>countryCode:</b></label><br>
-                            <input type="text" formControlName="countryCode" placeholder="Enter code"></div>
+                            <input type="text" id="inputwidth"formControlName="countryName" placeholder="Enter Name"></div>
+                        <div><label for="countryCode"><b>CountryCode:</b></label><br>
+                            <input type="text"id="inputwidth" formControlName="countryCode" placeholder="Enter code"></div>
                     </div>
 
-                </div>
+                </div><br>
                 <div>
                     <button type="submit" (click)="submitdata(City.value)">Submit</button>
                 </div>
